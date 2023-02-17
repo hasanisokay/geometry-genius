@@ -16,3 +16,19 @@ function randomBgColor(c){
     c.style.backgroundColor = bgColor;
 }
 
+// listening calculate buttons
+const buttons = document.getElementsByClassName('btn-calculate')
+for(button of buttons){
+    button.addEventListener('click',function(event){
+        // getting input field data for base and height
+        const baseInputField = event.target.parentNode.parentNode.children[2].children[0].children[0].value;
+        const heightInputField = event.target.parentNode.parentNode.children[2].children[1].children[0].value;
+        const baseInputValue = parseFloat(baseInputField);
+        const heightInputValue = parseFloat(heightInputField);
+        // alert for NaN type
+        if(isNaN(baseInputValue) || isNaN(heightInputValue)){
+            return alert("Please Enter a Valid Number")
+        }
+    })
+    
+}
