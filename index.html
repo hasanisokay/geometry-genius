@@ -23,12 +23,12 @@
     </header>
     <main>
         <section class="mt-12">
-            <div>
+            <div class="flex flex-col lg:flex-row">
                 <!-- left side cars here  -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:w-[75%] w-full gap-4 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 w-full">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                      <img src="./images/triangle.png" alt="triangle" class="rounded-xl w-[75%]" />
+                      <img src="./images/triangle.png" alt="triangle" class="w-[75%]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-bold">Triangle</h2>
@@ -44,10 +44,26 @@
                   </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                      <img src="./images/triangle.png" alt="triangle" class="rounded-xl w-[75%]" />
+                      <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">Triangle</h2>
+                      <h2 class="card-title font-bold">RectAngle</h2>
+                      <p class="area">Area (A) = 0.5 x <span class="display-base">b</span> x <span class="display-height">h</span> </p>
+                      <div class="flex gap-1">
+                            <p><input type="text" placeholder="Base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                      </div>
+                      <div class="card-actions w-full my-4">
+                        <button class="btn btn-info w-full btn-calculate">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">RectAngle</h2>
                       <p class="area">Area (A) = 0.5 x <span class="display-base">b</span> x <span class="display-height">h</span> </p>
                       <div class="flex gap-1">
                             <p><input type="text" placeholder="Base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
@@ -60,8 +76,20 @@
                   </div>
             </div>
             <!-- calculation part  -->
-            <div>
-
+            <div class="basis-2/6">
+                <h2 class="underline text-xl font-bold text-center mb-4">Area Calculation</h2>
+                <div class="overflow-x-auto">
+                    <table class="table w-[75%]">
+                      <tbody id="table-body">
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality</td>
+                          <td>Blue</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
             </div>
 
             </div>
