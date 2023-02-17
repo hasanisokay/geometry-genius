@@ -25,8 +25,8 @@
         <section class="mt-12">
             <div class="flex flex-col lg:flex-row">
                 <!-- left side cars here  -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 w-full">
-                <div class="card w-full bg-base-100 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 w-full lg:basis-9/12">
+                <div class="card w-full bg-base-100 shadow-xl max-h-96">
                     <figure class="px-10 pt-10">
                       <img src="./images/triangle.png" alt="triangle" class="w-[75%]" />
                     </figure>
@@ -38,11 +38,11 @@
                             <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
-                        <button class="btn btn-info w-full btn-calculate">Calculate</button>
+                        <button class="btn btn-info w-full btn-calculate three-variable">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <div class="card w-full bg-base-100 shadow-xl">
+                <div class="card w-full bg-base-100 shadow-xl max-h-96">
                     <figure class="px-10 pt-10">
                       <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
                     </figure>
@@ -54,11 +54,11 @@
                             <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
-                        <button class="btn btn-info w-full btn-calculate">Calculate</button>
+                        <button class="btn btn-info w-full btn-calculate two-variable">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <div class="card w-full bg-base-100 shadow-xl">
+                <div class="card w-full bg-base-100 shadow-xl max-h-96">
                     <figure class="px-10 pt-10">
                       <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
                     </figure>
@@ -70,16 +70,16 @@
                             <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
-                        <button class="btn btn-info w-full btn-calculate">Calculate</button>
+                        <button class="btn btn-info w-full btn-calculate ellipse">Calculate</button>
                       </div>
                     </div>
                   </div>
             </div>
             <!-- calculation part  -->
-            <div class="basis-2/6">
+            <div>
                 <h2 class="underline text-xl font-bold text-center mb-4">Area Calculation</h2>
-                <div class="overflow-x-auto">
-                    <table class="table w-[75%]">
+                <div>
+                    <table class="table">
                       <tbody id="table-body">
                         <!-- <tr>
                           <th>1</th>
@@ -91,11 +91,12 @@
                     </table>
                   </div>
             </div>
-
             </div>
         </section>
     </main>
 
+    <br><br>
+    
   <script src="./javascript/js.js"></script>
 </body>
 </html>
