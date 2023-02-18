@@ -32,10 +32,10 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-bold">Triangle</h2>
-                      <p class="area">Area (A) = 0.5 x <span class="display-base">b</span> x <span class="display-height">h</span> </p>
+                      <p class="area">Area (A) = 0.5 x <span>b</span> x <span>h</span> </p>
                       <div class="flex gap-1">
-                            <p><input type="text" placeholder="Base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
-                            <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="b" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="h" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
                         <button class="btn btn-info w-full btn-calculate three-variable">Calculate</button>
@@ -44,14 +44,14 @@
                   </div>
                 <div class="card w-full bg-base-100 shadow-xl max-h-96">
                     <figure class="px-10 pt-10">
-                      <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
+                      <img src="./images/rectangle.png" alt="rectangle" class="w-[75%]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">RectAngle</h2>
-                      <p class="area">Area (A) = 0.5 x <span class="display-base">b</span> x <span class="display-height">h</span> </p>
+                      <h2 class="card-title font-bold">Rectangle</h2>
+                      <p class="area">Area (A) = <span>w</span> x <span>l</span> </p>
                       <div class="flex gap-1">
-                            <p><input type="text" placeholder="Base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
-                            <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="w" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="l" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
                         <button class="btn btn-info w-full btn-calculate two-variable">Calculate</button>
@@ -60,17 +60,65 @@
                   </div>
                 <div class="card w-full bg-base-100 shadow-xl max-h-96">
                     <figure class="px-10 pt-10">
-                      <img src="./images/rectangle.png" alt="triangle" class="w-[75%]" />
+                      <img src="./images/parallelogram.png" alt="parallelogram" class="w-[75%]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">RectAngle</h2>
-                      <p class="area">Area (A) = 0.5 x <span class="display-base">b</span> x <span class="display-height">h</span> </p>
+                      <h2 class="card-title font-bold">Parallelogram</h2>
+                      <p class="area">Area (A) =<span>b</span> x <span>h</span> </p>
                       <div class="flex gap-1">
-                            <p><input type="text" placeholder="Base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="b" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="h" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                      </div>
+                      <div class="card-actions w-full my-4">
+                        <button class="btn btn-info w-full btn-calculate two-variable">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-full bg-base-100 shadow-xl max-h-96">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/pentagon.png" alt="triangle" class="w-[75%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Pentagon</h2>
+                      <p class="area">Area (A) = 0.5 x <span>p</span> x <span>b</span> </p>
+                      <div class="flex gap-1">
+                            <p><input type="text" placeholder="base" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
                             <p><input type="text" placeholder="height" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
                       </div>
                       <div class="card-actions w-full my-4">
                         <button class="btn btn-info w-full btn-calculate ellipse">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-full bg-base-100 shadow-xl max-h-96">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/rhombus.png" alt="Rhombus" class="w-[75%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Rhombus</h2>
+                      <p class="area">Area (A) = 0.5 x <span>d<sub>1</sub></span> x <span>d<sub>2</sub></span></p>
+                      <div class="flex gap-1">
+                            <p><input type="text" placeholder="d1" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="d2" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                      </div>
+                      <div class="card-actions w-full my-4">
+                        <button class="btn btn-info w-full btn-rhombus">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-full bg-base-100 shadow-xl max-h-96">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/ellipse.png" alt="ellipse" class="w-[75%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Ellipse</h2>
+                      <p class="area">Area (A) = &#960;<span>a</span><span>b</span></p>
+                      <div class="flex gap-1">
+                            <p><input type="text" placeholder="d1" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
+                            <p><input type="text" placeholder="d2" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
+                      </div>
+                      <div class="card-actions w-full my-4">
+                        <button class="btn btn-info w-full btn-ellipse">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -81,12 +129,6 @@
                 <div>
                     <table class="table">
                       <tbody id="table-body">
-                        <!-- <tr>
-                          <th>1</th>
-                          <td>Cy Ganderton</td>
-                          <td>Quality</td>
-                          <td>Blue</td>
-                        </tr> -->
                       </tbody>
                     </table>
                   </div>
@@ -96,7 +138,8 @@
     </main>
 
     <br><br>
-    
+  <script src="./javascript/utilites.js"></script>
   <script src="./javascript/js.js"></script>
+  <script src="./javascript/randomBg.js"></script>
 </body>
 </html>
