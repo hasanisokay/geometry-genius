@@ -27,5 +27,7 @@ document.getElementById('btn-rhombus').addEventListener("click",function(){
         const area = areaOfTrianglePentagonRhombus(diameter1.value, diameter2.value) 
         displayTable(area,"Rhombus")
     }
+    diameter1.value ='';
+    diameter2.value ='';
     
 })
