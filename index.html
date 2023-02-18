@@ -6,17 +6,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="px-2">
     <header>
-        <div class="navbar bg-base-100 shadow-xl">
+        <div class="navbar shadow-xl bg-gray-200 px-4">
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">
-                <p>Interactive <br> <span>Geometry</span></p>
+              <a class="normal-case text-xl">
+                <p> <span class="text-xl font-bold">Interactive </span> <br> <span>Geometry Genius</span></p>
               </a> 
             </div>
             <div class="flex-none">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Blog</a></li>
+                <li><a class="btn btn-info" id="btn-blog">Blog</a></li>
               </ul>
             </div>
           </div>
@@ -113,6 +113,7 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-bold">Ellipse</h2>
                       <p class="area">Area (A) = &#960;<span>a</span><span>b</span></p>
+
                       <div class="flex gap-1">
                             <p><input type="text" placeholder="d1" class="input w-[75%] bg-gray-200 input-base"/> cm</p>
                             <p><input type="text" placeholder="d2" class="input w-[75%] input-h bg-gray-200 input-base"/> cm</p>
@@ -139,7 +140,7 @@
 
     <br><br>
   <script src="./javascript/utilites.js"></script>
-  <script src="./javascript/js.js"></script>
+  <script src="./javascript/btnEventListener.js"></script>
   <script src="./javascript/randomBg.js"></script>
 </body>
 </html>

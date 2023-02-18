@@ -1,3 +1,10 @@
+// link to blog html page with blog button
+document.getElementById('btn-blog').addEventListener('click',function(){
+    window.location.href = './blog.html'
+})
+
+// function to display in the table
+let counter = 1;
 function displayTable(area, shapeName) {
     const tableBody = document.getElementById('table-body')
     let tr = document.createElement("tr");
@@ -11,10 +18,6 @@ function displayTable(area, shapeName) {
     counter++;
 }
 
-function toMetereSquare(areaInCmSquare){
-    return (areaInCmSquare * .0001).toFixed(2)
-}
-
 // calculating area of triangle and pentagon and rhombus
 function areaOfTrianglePentagonRhombus(a, b) {
     return (.5 * a * b).toFixed(2);
@@ -26,4 +29,9 @@ function areaOfEllipse(a, b) {
 // area of parallelogram and rectangle
 function areaOfParallelogramRectangle(a, b) {
     return (a * b).toFixed(2);
+}
+
+// convert area to meter square
+function toMetereSquare(areaInCmSquare){
+    return (areaInCmSquare * .0001).toFixed(2)
 }
