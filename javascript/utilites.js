@@ -31,7 +31,15 @@ function areaOfParallelogramRectangle(a, b) {
     return (a * b).toFixed(2);
 }
 
-// convert area to meter square
-function toMetereSquare(areaInCmSquare){
-    return (areaInCmSquare * .0001).toFixed(2)
+// validating input
+function validator(a,b){
+    if (isNaN(a) || isNaN(b)) {
+        return alert("Please enter valid number for both field");
+    }
+    else if( a < 0 || b < 0){
+        return alert("Enter positive value only");
+    }
+    else{
+        return true
+    }
 }

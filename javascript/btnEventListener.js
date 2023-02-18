@@ -1,4 +1,4 @@
-// listening calculate buttons
+// listening calculate buttons for first 4 cards
 const buttons = document.getElementsByClassName('btn-calculate')
 for (button of buttons) {
     button.addEventListener('click', function (event) {
@@ -16,18 +16,13 @@ for (button of buttons) {
         const shapeName = event.target.parentNode.parentNode.children[0].innerText;
 
         // alert for NaN and negetaive type
-        if (isNaN(baseInputValue) || isNaN(heightInputValue)) {
-            return alert("Please enter valid number for both field");
-        }
-        else if( baseInputValue < 0 || heightInputValue < 0){
-            return alert("Enter positive value only");
-        }
-
+        if (validator(baseInputValue, heightInputValue)){
         // check the class and calculate area
         const area = classChecker(event.target, baseInputValue, heightInputValue);
         
         // call display function to show the Area 
-        displayTable(area, shapeName);
+        displayTable(area, shapeName);   
+        }
     })
 }
 // check the class to determine the function for area
@@ -40,9 +35,5 @@ function classChecker(e, base, height) {
     // this will check for Area = .5 x base x height type shape
     else if (e.classList.contains("three-variable")) {
         return areaOfTrianglePentagonRhombus(base, height);
-    }
-    // this will check for ellipse 
-    else if (e.classList.contains("ellipse")) {
-        return areaOfEllipse(base, height);
     }
 }
